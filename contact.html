@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="bs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt | Agata Parfume Doboj</title>
+    <meta
+      name="description"
+      content="Kontaktirajte Agata Parfume u Doboju. Premium parfimerija sa online narudžbama, savjetovanjem i brzom dostavom širom BiH."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Agata Parfume početna">
+          <span class="brand-mark">AP</span>
+          <span class="brand-copy">
+            <strong>Agata Parfume</strong>
+            <small>Doboj, Bosna i Hercegovina</small>
+          </span>
+        </a>
+
+        <nav class="nav-links" aria-label="Glavna navigacija">
+          <a href="index.html#kolekcija">Kolekcija</a>
+          <a href="index.html#o-nama">O nama</a>
+          <a href="contact.html">Kontakt</a>
+        </nav>
+
+        <a class="cart-btn" href="index.html#kolekcija" aria-label="Kupi parfem">
+          Kupi sada
+        </a>
+      </div>
+    </header>
+
+    <main class="contact-page-main">
+      <section class="contact-hero-page">
+        <div class="container contact-hero-wrap">
+          <div class="reveal">
+            <p class="eyebrow">Agata Concierge Tim</p>
+            <h1>Kontaktirajte nas za narudžbe i personalizirani izbor mirisa</h1>
+            <p>
+              Ako želite preporuku mirisa za poklon, poslovni event ili lični
+              signature scent, naš tim iz Doboja vam odgovara u najkraćem roku.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-solid" href="tel:+38765955720">Pozovi odmah</a>
+              <a class="btn btn-outline" href="mailto:kontakt@agataparfume.ba"
+                >Pošalji email</a
+              >
+            </div>
+          </div>
+          <div class="contact-glass reveal" aria-hidden="true">
+            <p>Premium support</p>
+            <strong>09:00 - 21:00</strong>
+            <span>Ponedjeljak - Subota</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-page-section">
+        <div class="container contact-layout">
+          <article class="contact-card reveal">
+            <h2>Poslovni kontakt</h2>
+            <ul class="contact-info-list">
+              <li>
+                <span>Adresa</span>
+                <strong>Trg oslobođenja 4, 74000 Doboj, BiH</strong>
+              </li>
+              <li>
+                <span>Telefon</span>
+                <strong><a href="tel:+38765955720">+387 65 955 720</a></strong>
+              </li>
+              <li>
+                <span>Email</span>
+                <strong
+                  ><a href="mailto:kontakt@agataparfume.ba"
+                    >kontakt@agataparfume.ba</a
+                  ></strong
+                >
+              </li>
+              <li>
+                <span>Instagram</span>
+                <strong><a href="#">@agata.parfume</a></strong>
+              </li>
+            </ul>
+
+            <div class="hours-card">
+              <h3>Radno vrijeme</h3>
+              <ul class="hours-list">
+                <li><span>Pon - Pet</span><strong>09:00 - 21:00</strong></li>
+                <li><span>Subota</span><strong>10:00 - 19:00</strong></li>
+                <li><span>Nedjelja</span><strong>Zatvoreno</strong></li>
+              </ul>
+            </div>
+
+            <div class="quick-links">
+              <a class="btn btn-outline" href="index.html#kolekcija">Pregled kolekcije</a>
+              <a
+                class="btn btn-outline"
+                href="https://maps.google.com/?q=Doboj+Bosnia+Herzegovina"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Otvori mapu</a
+              >
+            </div>
+          </article>
+
+          <article class="contact-form-card reveal">
+            <h2>Pošaljite upit</h2>
+            <p>
+              Za B2B saradnje, poklon pakete ili pomoć oko narudžbe, pošaljite
+              upit i kontaktiraćemo vas istog dana.
+            </p>
+
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-row">
+                <label for="name">Ime i prezime</label>
+                <input id="name" name="name" required />
+              </div>
+              <div class="form-row double">
+                <div>
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" required />
+                </div>
+                <div>
+                  <label for="phone">Telefon</label>
+                  <input id="phone" name="phone" type="tel" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <label for="topic">Tema</label>
+                <select id="topic" name="topic" required>
+                  <option value="Narudžba">Narudžba</option>
+                  <option value="Preporuka mirisa">Preporuka mirisa</option>
+                  <option value="B2B saradnja">B2B saradnja</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="message">Poruka</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-solid">Pošalji upit</button>
+            </form>
+
+            <p class="form-feedback" id="inquiryResult" role="status" aria-live="polite"></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="map-section reveal">
+        <div class="container">
+          <div class="map-card">
+            <div>
+              <p class="eyebrow">Lokacija</p>
+              <h2>Posjetite Agata Parfume butik u centru Doboja</h2>
+              <p>
+                Testirajte parfeme uživo uz personalizirano savjetovanje i
+                premium gift pakovanje.
+              </p>
+            </div>
+            <a
+              class="btn btn-solid"
+              href="https://maps.google.com/?q=Trg+oslobodjenja+4+Doboj"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Navigacija do butika</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Agata Parfume. Sva prava zadržana.</p>
+        <a href="index.html">Nazad na početnu</a>
+      </div>
+    </footer>
+
+    <script src="contact.js"></script>
+  </body>
+</html>
