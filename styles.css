@@ -607,6 +607,28 @@ a {
   align-items: center;
 }
 
+.footer-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  transition: border-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+
+.social-link:hover {
+  border-color: var(--gold);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
 .contact-page-main {
   padding-bottom: 50px;
 }
@@ -1190,5 +1212,10 @@ select option {
   .footer-wrap {
     flex-direction: column;
     gap: 8px;
+  }
+
+  .footer-actions {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
