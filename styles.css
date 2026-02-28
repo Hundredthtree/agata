@@ -100,7 +100,14 @@ a {
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0;
+}
+
+.brand-logo {
+  height: 62px;
+  width: auto;
+  display: block;
+  filter: invert(1) drop-shadow(0 4px 12px rgba(0, 0, 0, 0.35));
 }
 
 .brand-mark {
@@ -1091,6 +1098,10 @@ select option {
 @media (max-width: 640px) {
   .hero {
     padding-top: 54px;
+  }
+
+  .brand-logo {
+    height: 52px;
   }
 
   .brand-copy small {
